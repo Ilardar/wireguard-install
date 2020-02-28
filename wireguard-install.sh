@@ -66,14 +66,14 @@ if [ ! -f "$WG_CONFIG" ]; then
 
     if [ "$CLIENT_DNS" == "" ]; then
         echo "Which DNS do you want to use with the VPN?"
-        echo "   1) Cloudflare"
+        echo "   1) AdGuard"
         echo "   2) Google"
         echo "   3) OpenDNS"
         read -p "DNS [1-3]: " -e -i 1 DNS_CHOICE
 
         case $DNS_CHOICE in
             1)
-            CLIENT_DNS="1.1.1.1,1.0.0.1"
+            CLIENT_DNS="176.103.130.130,176.103.130.131"
             ;;
             2)
             CLIENT_DNS="8.8.8.8,8.8.4.4"
